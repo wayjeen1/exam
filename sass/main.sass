@@ -1,10 +1,12 @@
 * 
 	padding: 0
 	margin: 0
+body 
+	background-color: #EAEAEA
+
 $border1: 1px solid #999999
 
 .container
-	background-color: #EAEAEA
 	width: 100%
 .menu
 	position: fixed
@@ -25,33 +27,37 @@ $border1: 1px solid #999999
 	ul
 		list-style-type: none
 		margin-top: 10px
-		margin-left: 20px
+		margin-left: 30px
 		li 
 			width: 150px
 			padding: 10px
-			font-size: 18px
+			font-size: 15px
 			color: #999999
 			a 
 				text-decoration: none
+				color: #999999
 .main 
 	display: inline-flex
 	flex-wrap: wrap
 	justify-content: space-around
 	position: relative
 	top: 0
-	left: 150px
+	left: 20px
 	font-size: 23px
 	font-weight: bold
 	padding: 20px
-	.top-right
-		width: 100%
-	 	margin-left: 20px
+	
+.top-right
+	width: 100%
+	margin-left: 20px
+	margin-bottom: 20px
 	
 .box-site
-	width: 200px
-	height: 120px
+	width: 230px
+	height: 130px
 	position: relative
-	text-align: left
+	text-align: right
+	color: #000
 	background-color: #fff
 	border: $border1 
 	padding: 10px
@@ -59,12 +65,39 @@ $border1: 1px solid #999999
 	margin-bottom: 10px
 	margin-right: 20px
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5)
-	.img1
-		position: absolute
-		top: -10px
-		left: 10px
-		width: 40px
-		height: 40px
-		text-align: center
-		background-color: #448B00
-		background-image: 
+.img1
+	@extend %position1
+	background-color: #448B00
+.fz13
+	display: block
+	font-size: 13px
+	color:#999999
+	margin: 0
+	padding: 0
+.fz10
+	font-size: 10px
+	color:#999999
+	padding-left: 10px
+hr 
+	margin: 0
+	margin-top: 10px
+.nesty1
+	text-align: left
+.img2
+	@extend %position1
+	background-color: #D89E24	
+.img3
+	@extend %position1
+	background-color: #274D97
+.img4
+	@extend %position1
+	background-color: #C32056
+
+%position1
+	position: absolute
+	top: -15px
+	left: 15px
+	width: 60px
+	height: 60px
+	text-align: center
+	padding-top: 10px

@@ -2,8 +2,10 @@
   padding: 0;
   margin: 0; }
 
+body {
+  background-color: #EAEAEA; }
+
 .container {
-  background-color: #EAEAEA;
   width: 100%; }
 
 .menu {
@@ -26,14 +28,15 @@
   .menu ul {
     list-style-type: none;
     margin-top: 10px;
-    margin-left: 20px; }
+    margin-left: 30px; }
     .menu ul li {
       width: 150px;
       padding: 10px;
-      font-size: 18px;
+      font-size: 15px;
       color: #999999; }
       .menu ul li a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #999999; }
 
 .main {
   display: -webkit-inline-box;
@@ -45,19 +48,22 @@
   justify-content: space-around;
   position: relative;
   top: 0;
-  left: 150px;
+  left: 20px;
   font-size: 23px;
   font-weight: bold;
   padding: 20px; }
-  .main .top-right {
-    width: 100%;
-      width-margin-left: 20px; }
+
+.top-right {
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 20px; }
 
 .box-site {
-  width: 200px;
-  height: 120px;
+  width: 230px;
+  height: 130px;
   position: relative;
-  text-align: left;
+  text-align: right;
+  color: #000;
   background-color: #fff;
   border: 1px solid #999999;
   padding: 10px;
@@ -66,11 +72,43 @@
   margin-right: 20px;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
-  .box-site .img1 {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    background-color: #448B00; }
+
+.img1 {
+  background-color: #448B00; }
+
+.fz13 {
+  display: block;
+  font-size: 13px;
+  color: #999999;
+  margin: 0;
+  padding: 0; }
+
+.fz10 {
+  font-size: 10px;
+  color: #999999;
+  padding-left: 10px; }
+
+hr {
+  margin: 0;
+  margin-top: 10px; }
+
+.nesty1 {
+  text-align: left; }
+
+.img2 {
+  background-color: #D89E24; }
+
+.img3 {
+  background-color: #274D97; }
+
+.img4 {
+  background-color: #C32056; }
+
+.img1, .img2, .img3, .img4 {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px; }
