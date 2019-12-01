@@ -5,6 +5,7 @@ body
 	background-color: #EAEAEA
 
 $border1: 1px solid #999999
+$shadow: 3px 3px 3px rgba(0, 0, 0, 0.5)
 
 .container
 	width: 100%
@@ -37,9 +38,9 @@ $border1: 1px solid #999999
 				text-decoration: none
 				color: #999999
 .main 
-	display: inline-flex
+	display: flex
 	flex-wrap: wrap
-	justify-content: space-around
+	justify-content: space-between
 	position: relative
 	top: 0
 	left: 20px
@@ -53,7 +54,7 @@ $border1: 1px solid #999999
 	margin-bottom: 20px
 	
 .box-site
-	width: 230px
+	width: 23.5%
 	height: 130px
 	position: relative
 	text-align: right
@@ -63,8 +64,7 @@ $border1: 1px solid #999999
 	padding: 10px
 	margin-top: 20px
 	margin-bottom: 10px
-	margin-right: 20px
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5)
+	box-shadow: $shadow
 .img1
 	@extend %position1
 	background-color: #448B00
@@ -101,3 +101,47 @@ hr
 	height: 60px
 	text-align: center
 	padding-top: 10px
+%position2
+	position: absolute
+	top: -15px
+	left: 15px
+	width: 90%
+	height: 65%
+.box-site1
+	width: 32%
+	height: 270px
+	position: relative
+	text-align: left
+	color: #999999
+	background-color: #fff
+	border: $border1 
+	padding: 10px
+	margin-top: 40px
+	margin-bottom: 10px
+	box-shadow: $shadow
+.graphic
+	background-color: #448B00
+	@extend %position2
+	img 
+		width: 99%
+		padding: 10px
+.text
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	font-size: 23px
+	font-weight: normal
+	padding: 10px
+.graphic2
+	background-color: #D89E24
+	@extend %position2
+	img 
+		width: 99%
+		padding: 10px
+.graphic3
+	background-color: #274D97
+	@extend %position2
+	img 
+		width: 99%
+		padding: 10px
