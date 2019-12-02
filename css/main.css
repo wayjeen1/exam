@@ -6,13 +6,15 @@ body {
   background-color: #EAEAEA; }
 
 .continer {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 17%;
+  min-width: 200px;
   height: 100%;
   background-color: #F6F6F6;
   border-left: 1px solid #999999;
@@ -28,8 +30,8 @@ body {
   .menu ul {
     width: 100%;
     list-style-type: none;
-    margin-top: 10px;
-    margin-left: 10px; }
+    margin: 0;
+    padding: 0; }
     .menu ul li {
       padding: 5px;
       padding-left: 20px;
@@ -39,9 +41,9 @@ body {
       .menu ul li a {
         text-decoration: none;
         color: #999999;
-        padding: 5px 40px;
+        padding: 5px 20px;
         display: block;
-        width: 160px; }
+        width: 170px; }
       .menu ul li a:hover {
         color: #fff;
         background-color: #C32056;
@@ -106,7 +108,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 87%;
+  width: 80%;
   font-size: 23px;
   font-weight: bold;
   padding: 20px; }
@@ -211,6 +213,7 @@ hr {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
   .graphic img {
     width: 99%;
+    height: 95%;
     padding: 10px; }
 
 .text {
@@ -228,6 +231,7 @@ hr {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
   .graphic2 img {
     width: 99%;
+    height: 95%;
     padding: 10px; }
 
 .graphic3 {
@@ -236,11 +240,12 @@ hr {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
   .graphic3 img {
     width: 99%;
+    height: 95%;
     padding: 10px; }
 
 .box-site2 {
   width: 48%;
-  height: 320px;
+  height: auto;
   position: relative;
   text-align: left;
   color: #999999;
@@ -258,16 +263,17 @@ hr {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
   .bottom-box .mini {
+    width: 100%;
     list-style-type: none;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     color: #fff; }
     .bottom-box .mini li {
       display: inline-block;
       padding: 5px;
-      padding-left: 20px; }
+      padding-left: 10px; }
       .bottom-box .mini li a {
         text-decoration: none;
         color: #fff; }
@@ -275,8 +281,8 @@ hr {
         margin-right: 7px; }
       .bottom-box .mini li a:hover {
         background-color: #DEAD49;
-        padding: 7px 20px;
-        width: 70px; }
+        padding: 7px 10px;
+        width: 20%; }
 
 .bottom-box1 {
   height: 70px;
@@ -456,8 +462,199 @@ hr {
     -ms-grid-row-span: 1;
     grid-row: 5/6; }
 
+input {
+  display: inline-block;
+  margin: 10px;
+  border-bottom: 1px solid #999999; }
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7%, 83%, 7%, 7%;
+  grid-template-columns: 7%, 83%, 7%, 7%;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  margin-top: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px; }
+  .form img {
+    width: 70%; }
+  .form > div {
+    border-bottom: 1px solid #999999; }
+
 .footer {
   bottom: 0;
   right: 0;
   position: absolute;
-  margin: 20px; }
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.check1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 5px;
+  text-align: center; }
+
+.check2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 5px; }
+
+.check3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check4 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 5px;
+  text-align: center; }
+
+.check6 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 5px; }
+
+.check7 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check8 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check9 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding: 5px;
+  text-align: center; }
+
+.check10 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding: 5px; }
+
+.check11 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check12 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check13 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  padding: 5px;
+  text-align: center; }
+
+.check14 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  padding: 5px; }
+
+.check15 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
+
+.check16 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: center; }
