@@ -97,9 +97,7 @@ $color: #74B3B2
 			padding-left: 30px
 			box-shadow: $shadow1
 .main 
-	top: 0
-	right: 0
-	position: absolute
+	float: right
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
@@ -107,12 +105,29 @@ $color: #74B3B2
 	font-size: 20px
 	font-weight: bold
 	padding: 20px
-	
-.top-right
-	width: 100%
-	margin-left: 20px
-	margin-bottom: 20px
-	
+	margin-right: 10px
+	.top-right
+		width: 100%
+		margin-left: 20px
+		margin-bottom: 20px
+		box-sizing: border-box
+	.top-image
+		background-image: url(../img/menu.png)
+		background-repeat: no-repeat
+		background-position: center left
+		background-size: 20px 20px
+	.hidden-menu
+		position: absolute
+		top: 50px
+		left: 30px
+		z-index: 999
+		background-color: white
+		border: $border1
+		display: none
+		ul
+			list-style-type: none
+			width: 150px
+
 .box-site
 	width: 23.5%
 	height: 130px
@@ -388,6 +403,8 @@ input
 		width: 55%
 	>div
 		border-bottom: $border1
+	.check13, .check14, .check15, .check16
+		border-bottom: none
 
 .check1
 	grid-column: 1/2
@@ -474,9 +491,10 @@ input
 	padding-top: 15px
 	text-align: center
 .footer
-	bottom: 0
-	right: 0
-	position: absolute
-	margin: 20px
+	float: right
+	width: 80%
+	padding-left: 50px
+    box-sizing: border-box
 	display: flex
 	justify-content: space-between
+

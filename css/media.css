@@ -1,7 +1,13 @@
 /*==========  Desktop First Method  ==========*/
+@media screen and (min-width: 800.1px){
+.main .top-image {
+    background-image: none;
+}
 
+}
 /* Medium Devices, Desktops */
 @media (min-width: 800px) and (max-width : 999.9px) {
+
 .menu {
   width: 200px;
 }
@@ -13,6 +19,9 @@
 .main {
   width: 75%;
   font-size: 23px;}
+.main .top-image {
+    background-image: none;
+}
 .box-site {
   width: 48%;
   margin-top: 30px;} 
@@ -76,9 +85,20 @@
 .main {
   width: 100%;
   font-size: 23px;}
+.main .top-right {
+   padding-left: 30px;
+   cursor: pointer; 
+}
+.main .top-right label{
+   cursor: pointer; 
+}
+.main:hover .hidden-menu{
+  display: block;
+}
 .menu .top {
     font-size: 23px;
 }
+
 .menu ul li {
     font-size: 15px; }
 .box-site {
@@ -121,7 +141,8 @@
 	height: 260px;
 }
 .box-site2 {
-   width: 100%;}
+   width: 100%;
+}
 .bottom-box {
   height: 65px;}
 .bottom-box .mini {
@@ -144,6 +165,10 @@
 .main {
   width: 100%;
   font-size: 23px;}
+.top-right:hover{
+	display: block;
+	cursor: pointer;
+}
 .menu .top {
     font-size: 23px;
 }
@@ -210,9 +235,6 @@
   font-size: 15px; }
 .form img {
     width: 55%; }
-.check1,.check2,.check3, .check4, .check5, .check6, .check7, .check8, .check9, .check10, .check11, .check12, .check13, .check14, .check15, .check16,{
-  padding: 10px;}
-}
  }
 	/*Disable Animation on Mobile Devices*/
 	.animated {
