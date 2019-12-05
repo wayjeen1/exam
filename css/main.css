@@ -110,29 +110,49 @@ body {
   font-size: 20px;
   font-weight: bold;
   padding: 20px;
+  padding-bottom: 30px;
   margin-right: 10px; }
   .main .top-right {
     width: 100%;
-    margin-left: 20px;
     margin-bottom: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  .main .top-image {
-    background-image: url(../img/menu.png);
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 20px 20px; }
-  .main .hidden-menu {
+    .main .top-right .my {
+      width: 150px;
+      padding-left: 30px; }
+  .main ul {
     position: absolute;
     top: 50px;
-    left: 30px;
+    left: 35px;
+    height: 280px;
     z-index: 999;
-    background-color: white;
+    background-color: #EAEAEA;
     border: 1px solid #999999;
-    display: none; }
-    .main .hidden-menu ul {
-      list-style-type: none;
-      width: 150px; }
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    display: none;
+    list-style-type: none;
+    width: 150px;
+    padding-top: 20px; }
+    .main ul li {
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 50px;
+      margin-left: 10px;
+      font-size: 14px; }
+      .main ul li a {
+        text-decoration: none;
+        color: #888888;
+        padding: 5px;
+        display: block;
+        width: 150px; }
+      .main ul li a:hover {
+        color: #fff;
+        background-color: #C32056;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        margin-left: -30px;
+        padding-left: 30px; }
 
 .box-site {
   width: 23.5%;
@@ -676,4 +696,39 @@ input {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-top: 1px solid #999999;
+  border-width: 95%; }
+
+.footerlist {
+  width: 50%;
+  text-align: left;
+  padding-top: 30px; }
+  .footerlist ul {
+    list-style-type: none; }
+    .footerlist ul li {
+      display: inline-block;
+      background-color: #EAEAEA; }
+      .footerlist ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #888888;
+        display: block;
+        width: 90px;
+        padding: 5px;
+        padding-left: 10px; }
+      .footerlist ul li a:hover {
+        width: 90px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2F2F2F;
+        background-color: #888888;
+        padding: 5px;
+        padding-left: 10px; }
+
+.label {
+  width: 50%;
+  text-align: right;
+  padding: 35px 35px 0 0;
+  color: #888888; }
